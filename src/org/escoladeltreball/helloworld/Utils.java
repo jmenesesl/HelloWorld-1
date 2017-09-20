@@ -9,6 +9,8 @@ package org.escoladeltreball.helloworld;
  */
 public interface Utils {
 	
+	public abstract double frequencyPercentage(int[] values, int n);
+	
 	
 	/*
 	 * This method returns the frequency of n in values
