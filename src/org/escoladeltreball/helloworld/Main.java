@@ -16,7 +16,7 @@ public final class Main implements Utils {
 //
 //		int[] v = { 2, 3, 4, 5, 3, 2, 1 };
 //		Main main = new Main();
-//		System.out.println(main.findSmallest(v));
+//		System.out.println(main.findSmallest(v)); 
 	}
 
 	/*
