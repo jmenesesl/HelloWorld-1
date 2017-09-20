@@ -43,4 +43,10 @@ public final class Main implements Utils {
 		return temp;
 	}
 
+	@Override
+	public int frequency(int[] values, int n) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
