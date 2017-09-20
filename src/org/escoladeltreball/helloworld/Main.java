@@ -7,14 +7,40 @@ package org.escoladeltreball.helloworld;
  * @author jmendez
  *
  */
-public final class Main {
+public final class Main implements Utils {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		System.out.println("Hello World");
+		int[] v = { 2, 3, 4, 5, 3, 2, 1 };
+		Main main = new Main();
+		System.out.println(main.findSmallest(v));
+	}
 
+	/*
+	 * (non-Javadoc) This methods returns the smallest value from values
+	 * 
+	 * @see org.escoladeltreball.helloworld.Utils#findSmallest(int[])
+	 */
+	@Override
+	public int findSmallest(int[] values) {
+		int temp = values[0];
+		for (int value : values) {
+			if (value < temp) {
+				temp = value;
+			}
+		}
+		return temp;
+	}
+
+	@Override
+	public int sum(int[] values) {
+		int temp = 0;
+		for (int value : values) {
+			temp += value;
+		}
+		return temp;
 	}
 
 }
