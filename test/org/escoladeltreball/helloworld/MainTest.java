@@ -70,7 +70,7 @@ public class MainTest {
 	/**
 	 * Test method for {@link org.escoladeltreball.helloworld.Main#sum(int[])}.
 	 */
-	// @Ignore("El tractarem més tard")
+	 @Ignore("El tractarem més tard")
 	@Test
 	public final void testSum() {
 		fail("Not yet implemented"); // TODO
@@ -80,20 +80,59 @@ public class MainTest {
 	 * Test method for
 	 * {@link org.escoladeltreball.helloworld.Main#frequency(int[], int)}.
 	 */
-	@Ignore("El tractarem més tard")
+	 @Ignore("El tractarem més tard")
 	@Test
 	public final void testFrequency() {
-		fail("Not yet implemented"); // TODO
+		 fail("Not yet implemented"); // TODO
 	}
 
 	/**
 	 * Test method for
 	 * {@link org.escoladeltreball.helloworld.Main#frequencyPercentage(int[], int)}.
 	 */
-	@Ignore("El tractarem més tard")
+	//@Ignore("El tractarem més tard")
 	@Test
 	public final void testFrequencyPercentage() {
-		fail("Not yet implemented"); // TODO
+		int[] values = {3, 4, 3, 5, 1, 2, 3, 0 };
+		assertEquals(37.5, main.frequencyPercentage(values, 3), 1e-2);
 	}
+	
+	/**
+	 * Test method for
+	 * {@link org.escoladeltreball.helloworld.Main#frequencyPercentage(int[], int)}.
+	 */
+//	@Ignore("El tractarem més tard")
+	@Test
+	public final void testMerge() {
+		int[] values = { 3, 7, 9, 10, 13, 21 }; // el vector original
+		int[] result = { 3, 7, 9, 10, 11, 13, 21 }; // El resultado esperado
+		int[] resultat = main.merge(values, 11); // resultado del método
+		int iguales = 0;
+		/*
+		 * En el siguiente for, se compararan los dos vectores con el fin de determinar que son iguales
+		 * de la siguiente forma:
+		 * si se consigue la misma cantidad de igualdades que el tamaño del array a resultar son iguales.
+		 */
+		for (int i = 0; i < result.length; i++) {
+			if (result[i] == resultat[i]) {
+				iguales++;
+			}
+		}
+		assertEquals(iguales, result.length);
+	}
+	
+
+	/**
+	 * Test method for
+	 * {@link org.escoladeltreball.helloworld.Main#frequencyPercentage(int[], int)}.
+	 */
+//	@Ignore("El tractarem més tard")
+	@Test
+	public final void testIsPresent() {
+		int[] values = {3, 7, 9, 10, 13, 21 };
+		assertEquals(true, main.isPresent(values, 3));
+	}
+	
+	
 
 }
