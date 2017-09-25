@@ -13,7 +13,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 /**
- * @author jmendez
+ * @author jmenesesl
  *
  */
 public class MainTest {
@@ -70,20 +70,23 @@ public class MainTest {
 	/**
 	 * Test method for {@link org.escoladeltreball.helloworld.Main#sum(int[])}.
 	 */
-	 @Ignore("El tractarem més tard")
+	// @Ignore("El tractarem més tard")
 	@Test
 	public final void testSum() {
-		fail("Not yet implemented"); // TODO
+//		fail("Not yet implemented"); // TODO
+		int[] values = {3, 4, 3, 5, 1, 2, 3, 0 };
+		assertEquals(21, main.sum(values));
 	}
 
 	/**
 	 * Test method for
 	 * {@link org.escoladeltreball.helloworld.Main#frequency(int[], int)}.
 	 */
-	 @Ignore("El tractarem més tard")
+	// @Ignore("El tractarem més tard")
 	@Test
 	public final void testFrequency() {
-		 fail("Not yet implemented"); // TODO
+		int[] values = {3, 4, 3, 5, 1, 2, 3, 0 };
+		assertEquals(3, main.frequency(values, 3));
 	}
 
 	/**

@@ -4,7 +4,7 @@
 package org.escoladeltreball.helloworld;
 
 /**
- * @author jmendez
+ * @author jmenesesl
  *
  */
 public interface Utils {
