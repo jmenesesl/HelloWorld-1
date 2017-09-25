@@ -82,7 +82,7 @@ public class MainTest {
 	 * Test method for
 	 * {@link org.escoladeltreball.helloworld.Main#frequency(int[], int)}.
 	 */
-	// @Ignore("El tractarem més tard")
+	// @Ignore("El tractarem mes tard")
 	@Test
 	public final void testFrequency() {
 		int[] values = {3, 4, 3, 5, 1, 2, 3, 0 };
